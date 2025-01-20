@@ -1,0 +1,32 @@
+﻿@using MVC_Assignment.Models
+@model IEnumerable<Book>
+
+@{
+    ViewBag.Title = "BookList";
+}
+
+<h2>Book List</h2>
+
+<table class="table table-striped">
+    <tr>
+        <td>
+            Book Id
+        </td>
+        <td>
+            Book Name
+        </td>
+        <td>
+            Book Author
+        </td>
+    </tr>
+    @foreach (var book in Model)
+    {
+        <tr>
+            <td>@book.BookId</td>
+            <td>@book.BookName</td>
+            <td>@book.BookAuthor</td>
+        </tr>
+    }
+
+
+</table>

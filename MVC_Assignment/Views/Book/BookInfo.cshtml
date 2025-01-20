@@ -1,0 +1,73 @@
+﻿@using MVC_Assignment.Models
+@model Book
+@{
+    ViewBag.Title = "BookInfo";
+    var book_viewbag = ViewBag.book;
+    var book_viewdata = (Book)ViewData["book1"];
+}
+
+<h2>Book Info From Model</h2>
+
+<table class="table table-striped">
+    <tr>
+        <td>
+            Book Id
+        </td>
+        <td>
+            Book Name
+        </td>
+        <td>
+            Book Author
+        </td>
+    </tr>
+    <tr>
+        <td>@Model.BookId</td>
+        <td>@Model.BookName</td>
+        <td>@Model.BookAuthor</td>
+    </tr>
+
+</table>
+
+<h2>Book Info From ViewBag</h2>
+
+<table class="table table-striped">
+    <tr>
+        <td>
+            Book Id
+        </td>
+        <td>
+            Book Name
+        </td>
+        <td>
+            Book Author
+        </td>
+    </tr>
+    <tr>
+        <td>@book_viewbag.BookId</td>
+        <td>@book_viewbag.BookName</td>
+        <td>@book_viewbag.BookAuthor</td>
+    </tr>
+
+</table>
+
+<h2>Book Info From ViewData</h2>
+
+<table class="table table-striped">
+    <tr>
+        <td>
+            Book Id
+        </td>
+        <td>
+            Book Name
+        </td>
+        <td>
+            Book Author
+        </td>
+    </tr>
+    <tr>
+        <td>@book_viewdata.BookId</td>
+        <td>@book_viewdata.BookName</td>
+        <td>@book_viewdata.BookAuthor</td>
+    </tr>
+
+</table>
