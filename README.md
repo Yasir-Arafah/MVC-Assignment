@@ -1,2 +1,3 @@
 # MVC-Assignment
-Try to recreate the assignment on your own.
+
+1. See the video presentation to understand the assignment
